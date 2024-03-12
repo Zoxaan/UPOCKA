@@ -5,20 +5,16 @@
     <h1>Оргтехника</h1>
     <p>Добро пожаловать на наш сайт товаров</p>
     <hr>
-
-    <!-- Карусель -->
     <style>
         .carousel-item img {
             max-height: 300px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
-
         .carousel-control-prev,
         .carousel-control-next {
             filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
         }
-
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
             width: 30px;
@@ -54,7 +50,6 @@
             border-top: 3px solid #ffd000; /* Зеленый цвет линии */
         }
     </style>
-
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 60%; margin: 0 auto;">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -73,7 +68,6 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-
     <h2>Товары</h2>
     <div class="row">
         <?php
@@ -82,7 +76,6 @@
         $username = "zoxan";
         $password = "123";
         $dbname = "textovarorg";
-
         try {
             $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -112,7 +105,6 @@
         ?>
     </div>
 <?php include "foter.php"; ?>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

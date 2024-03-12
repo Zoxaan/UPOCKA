@@ -1,25 +1,20 @@
 <?php include "header.php"; ?>
-
     <style>
         .category-container {
             margin-top: 50px;
         }
-
         .category-container .category {
             text-align: center;
             margin-bottom: 30px;
         }
-
         .category a {
             text-decoration: none; /* Убираем подчеркивание ссылок */
             color: white; /* Устанавливаем белый цвет текста для ссылок */
             position: relative; /* Устанавливаем позиционирование относительно ссылки */
         }
-
         .category a:hover {
             color: #ffd000; /* Устанавливаем зеленый цвет текста для ссылок при наведении */
         }
-
         .category a::after {
             content: ''; /* Создаем псевдоэлемент для линии */
             display: block;
@@ -31,14 +26,11 @@
             left: 0; /* Выравниваем линию по левому краю ссылки */
             transition: width 0.3s; /* Анимируем изменение ширины */
         }
-
         .category a:hover::after {
             border-top: 4px solid #ffd000; /* Зеленый цвет линии */
             width: 100%; /* Увеличиваем ширину линии при наведении */
         }
-
         .category img {
-
             width: 100%; /* Устанавливаем ширину изображения на 100% ширины родительского контейнера */
             height: 300px; /* Фиксированная высота изображения */
             object-fit: cover; /* Заполнение изображения в пределах заданных размеров без изменения пропорций */

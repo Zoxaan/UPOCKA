@@ -6,15 +6,12 @@ $servername = "localhost";
 $username = "zoxan";
 $password = "123";
 $dbname = "textovarorg";
-
 try {
     $db = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
     // SQL запрос для получения информации о услугах
     $sql = "SELECT * FROM Services";
     $stmt = $db->query($sql);
-
     // Вывод данных о услугах
     echo '<div class="container mt-5 d-flex justify-content-center">';
     echo '<div class="row">';
@@ -39,7 +36,6 @@ try {
     }
     echo '</div>';
     echo '</div>';
-
 } catch (PDOException $e) {
     echo '<p class="text-danger">Ошибка получения данных: ' . $e->getMessage() . '</p>';
 }
@@ -68,6 +64,4 @@ try {
     .col-md-8 {
         flex: 1;
     }
-
-
 </style>
